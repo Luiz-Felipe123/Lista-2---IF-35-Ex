@@ -25,6 +25,33 @@ void leiaVetor(int v[], int n){
 	printf("\n");
 }
 //-------------------------------
+void floatleiaVetor(float v[], int n){
+	int i;
+	for(i=0;i<n;i++){
+	   printf("v[%d]:",i);
+	   scanf("%f",&v[i]);
+	}// fim for
+	printf("\n");
+}
+//-------------------------------
+void mostraVetorFloat(float v[], int n){
+	int i;
+	for(i=0;i < n;i++)
+	   printf("%.1f |", v[i]);
+	printf("\n");
+}
+//-------------------------------
+void leiaVetorChar(char v[]){
+	int i;
+	for(i=0;i<10;i++){
+	   printf("%d - ",i+1);
+	   fflush(stdin);
+	   scanf(" %c",&v[i]);
+	}// fim for
+	printf("\n");
+}
+//-------------------------------
 
 
 #endif // BIBLIOTECAVETOR_H_INCLUDED
+
