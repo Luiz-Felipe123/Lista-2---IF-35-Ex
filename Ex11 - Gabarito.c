@@ -2,21 +2,11 @@
 #include <stdlib.h>
 #include "bibliotecaVetor.h"
 
-/*Deseja-se publicar o número de acertos de cada aluno em uma prova em forma de testes. A prova consta de
-10 questões, cada uma com quatro alternativas identificadas por A, B, C, e D. Para isso são dados:
-o cartão gabarito;
-o número de alunos da turma;
-o cartão de respostas para cada aluno, contendo o seu número e suas respostas. */
-
-void leiaVetorChar(char v[]){
-	int i;
-	for(i=0;i<10;i++){
-	   printf("%d - ",i+1);
-	   fflush(stdin);
-	   scanf(" %c",&v[i]);
-	}// fim for
-	printf("\n");
-}
+/*Deseja-se publicar o nÃºmero de acertos de cada aluno em uma prova em forma de testes. A prova consta de
+10 questÃµes, cada uma com quatro alternativas identificadas por A, B, C, e D. Para isso sÃ£o dados:
+o cartÃ£o gabarito;
+o nÃºmero de alunos da turma;
+o cartÃ£o de respostas para cada aluno, contendo o seu nÃºmero e suas respostas. */
 
 int main()
 {
