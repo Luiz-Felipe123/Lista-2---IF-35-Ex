@@ -1,23 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Dado um vetor A de n números reais, faça um programa para obter o maior e o menor elemento do vetor,
+/* Dado um vetor A de n nÃºmeros reais, faÃ§a um programa para obter o maior e o menor elemento do vetor,
 apresente o vetor, maior e menor valor */
 
-void floatleiaVetor(float v[], int n){
-	int i;
-	for(i=0;i<n;i++){
-	   printf("v[%d]:",i);
-	   scanf("%f",&v[i]);
-	}// fim for
-	printf("\n");
-}
-void mostraVetor(float v[], int n){
-	int i;
-	for(i=0;i < n;i++)
-	   printf("%.1f |", v[i]);
-	printf("\n");
-}
 int main()
 {
     float vetor[100];
@@ -27,12 +13,12 @@ int main()
     printf("Digite a quantidade de elementos do vetor: ");
     scanf("%d", &n);
 
-    floatleiaVetor(vetor, n); // Função que le um vetor
+    floatleiaVetor(vetor, n); // FunÃ§Ã£o que le um vetor
 
     maior = vetor[0];
     menor = vetor[0];
 
-    mostraVetor(vetor, n); // Função que mostra/apresente o vetor na tela
+    mostraVetor(vetor, n); // FunÃ§Ã£o que mostra/apresente o vetor na tela
 
     for(i = 1; i < n; i++)
     {
